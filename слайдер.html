@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider</title>
+    <style>
+		body {
+			height:  100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+		p {
+			color: rgb(42, 126, 165);
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			left: 180px;
+			top: 10px;
+		}
+		.slider {
+		  width: 300px;
+		  height: 10px;
+		  background-color: #191616;
+		  position: relative;
+		  margin-top: 70px;
+		  border-radius: 20%;
+		}
+		.thumb {
+		  width: 20px;
+		  height: 20px;
+		  background-color: green;
+		  border-radius: 50%;
+		  position: absolute;
+		  top: -50%;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  cursor: pointer;
+		}
+		.range {
+		  height: 100%;
+		  background-color: green;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  border-radius: 30%;
+		}
+		.value {
+		  font-size: 30px;
+		  position: absolute;
+		  top: -30px;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  
+		}
+	  </style>
+  </head>
+  <body>
+	<p>С л а й д е р</p>
+    <div class="slider">
+      <div class="thumb"></div>
+      <div class="range"></div>
+    </div>
+    <div class="value">50</div>
+	<script src="slider.js"></script>
+    
+  </body>
+</html>
